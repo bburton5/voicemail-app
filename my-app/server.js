@@ -9,5 +9,18 @@ const db = mysql.createConnection(
     password: "",
     database: "buttons_db",
   },
-  console.log(`Connected to the buttons_db database`)
+  console.log(`Connected to the buttons_db database.`)
 );
+
+// Function to query all button names
+let viewAllButtons = (results) => {
+  db.query(`SELECT * FROM button;`, (err, result) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(results);
+    }
+  });
+};
+
+viewAllButtons();

@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS buttons_db;
 CREATE DATABASE buttons_db;
 
 USE buttons_db;
