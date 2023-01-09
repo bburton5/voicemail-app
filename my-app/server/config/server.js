@@ -24,3 +24,5 @@ let viewAllButtons = (results) => {
 };
 
 viewAllButtons();
+
+module.exports = db;
